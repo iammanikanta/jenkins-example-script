@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage("say hello"){
             steps{
-                echo "========executing A========"
+                sh 'python hello.py'
             }
             post{
                 always{
